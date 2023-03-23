@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d92229b07.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0px;
+            background-color: black;
+
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 0px;
+        }
+
+        .main {
+            width: 80%;
+            margin: auto;
+        }
+
+        .col1 {
+            float: left;
+        }
+
+        .col2 {
+            float: right;
+            padding: 20px 0px;
+        }
+        p {
+            font-weight: 200;
+            margin: 0;
+
+        }
+
+        span {
+            color: red;
+        }
+
+        .col2 a {
+            padding: 20px 10px;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            background-color: red;
+            border-radius: 100px;
+            color: white;
+        }
+
+        section {
+            background-color: rgb(29, 2, 2);
+            padding: 20px 0px 30px 0px;
+        }
+
+        section>div>div {
+            padding-bottom: 20px;
+        }
+
+        .row3 {
+            width: 80%;
+            margin: auto;
+        }
+
+        .row3>div>div {
+            color: gainsboro;
+            width: 20%;
+            float: left;
+
+        }
+
+        .row3>div>div>h1 {
+            font-weight: 200;
+        }
+
+        .row3>div>div:nth-child(3) {
+            color: gainsboro;
+            width: 75%;
+            float: left;
+
+        }
+
+        .row3>div>div:nth-child(2) {
+            width: 5%;
+            border-left: solid gainsboro;
+            float: left;
+        }
+
+        .option {
+            background-color: black;
+            padding: 20px 0px 40px 0px;
+        }
+
+        .genre {
+            width: 25%;
+            color: white;
+            float: left;
+        }
+
+        .genre>div>h3 {
+            font-weight: 200;
+        }
+
+        .genre>div>img {
+            height: 120px;
+        }
+
+        .genre>div:nth-child(3) {
+            padding: 15px 0px;
+        }
+
+        .genre>div>p:first-child {
+            font-size: small;
+        }
+
+        .genre>div>p:nth-child(2) {
+            color: gainsboro;
+            font-size: small;
+        }
+
+        .genre button {
+            color: white;
+            background-color: red;
+            border: none;
+            padding: 5px 5px;
+        }
+
+        button:hover {
+            color: white;
+            background-color: aquamarine;
+        }
+
+        .test {
+            width: 80%;
+            margin: auto;
+        }
+
+        .test>div:first-child {
+            padding-right: 20px;
+        }
+
+        .test>div:nth-child(2) {
+            padding-right: 10px;
+        }
+
+        .test>div:nth-child(3) {
+            padding-left: 10px;
+        }
+
+        .test>div:nth-child(4) {
+            padding-left: 20px;
+        }
+
+        .short {
+            width: 50%;
+            float: left;
+        }
+
+        .pic {
+            width: 50%;
+            float: left;
+        }
+
+        .content {
+            width: 50%;
+            float: left;
+
+        }
+
+        .content {
+            font-size: small;
+            padding: 0px 10px;
+        }
+
+        .content>div>p {
+            color: white;
+            padding-bottom: 10px;
+        }
+
+        .content>div>ul:first-child {
+            padding: 0px 0px 0px 5px;
+        }
+
+        .content>div>ul:nth-child(2) {
+            padding-left: 5px;
+        }
+
+        hr {
+            margin: 0;
+            border: solid grey 1px;
+        }
+
+        ul {
+            width: 50%;
+            margin-top: 2px;
+            float: left;
+            color: red;
+            list-style: none;
+            line-height: 20px;
+        }
+
+        li::before {
+            content: "\203A";
+        }
+
+        .latest {
+            width: 50%;
+            float: left;
+        }
+
+        article {
+            background-color: rgb(29, 2, 2);
+            padding-top: 20px;
+            color: white;
+        }
+
+        .picrow img {
+            width: 25%;
+            float: left;
+        }
+
+        footer {
+            background-color: white;
+            padding: 30px 0px;
+        }
+
+        .end1 {
+            width: 40%;
+            float: left;
+        }
+
+        .icon {
+            width: 10%;
+            float: right;
+        }
+
+        article h2 {
+            font-weight: 200;
+        }
+
+        .picrow>div>img {
+            padding: 0px 5px 10px 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="col1">
+                <h2><span>K</span>ata<span>K</span>ilmt</h2>
+                <p>photogrphy</p>
+            </div>
+            <div class="col2">
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Folio</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <section>
+        <div class="main">
+            <div><img src="images/fullimage.png"></div>
+        </div>
+        <div class="row3">
+            <div>
+                <div>
+                    <h1><span>W</span>elcome!</h1>
+                </div>
+                <div>
+                    <pre>
+
+                    </pre>
+                </div>
+                <div>
+                    <p><span>click here</span>for more info about this free website template created by
+                        templateMonster.com.this is a bootstrap template that goes with several layout options(for
+                        desktop,tablet,smartphone landscape and portrait)to fit all popular screen resolutions.the psd
+                        source files of this template are available for free for the registered members of
+                        templateMonster.com.feel free to get them!</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <div class="option">
+        <div class="test">
+            <div class="genre">
+                <div>
+                    <h3>Fashion</h3>
+                </div>
+                <div><img src="images/Screenshot (46).png"></div>
+                <div>
+                    <p>At vero eos et accusamus et iusto</p>
+                    <p>Odio dignissimos ducimus qui blanditis presentium volupatium</p>
+                </div>
+                <div><button>Read more</button></div>
+            </div>
+            <div class="genre">
+                <div>
+                    <h3>Nature</h3>
+                </div>
+                <div><img src="images/beads-of-water-on-blades-of-grass.jpg"></div>
+                <div>
+                    <p>At vero eos et accusamus et iusto</p>
+                    <p>Odio dignissimos ducimus qui blanditis presentium volupatium</p>
+                </div>
+                <div><button>Read more</button></div>
+            </div>
+            <div class="genre">
+                <div>
+                    <h3>Love story</h3>
+                </div>
+                <div><img src="images/img_2.png"></div>
+                <div>
+                    <p>At vero eos et accusamus et iusto</p>
+                    <p>Odio dignissimos ducimus qui blanditis presentium volupatium</p>
+                </div>
+                <button>Read more</button>
+            </div>
+            <div class="genre">
+                <div>
+                    <h3>Fine art</h3>
+                </div>
+                <div><img src="images/img_3.png"></div>
+                <div>
+                    <p>At vero eos et accusamus et iusto</p>
+                    <p>Odio dignissimos ducimus qui blanditis presentium volupatium</p>
+                </div>
+                <button>Read more</button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <article>
+        <div class="main">
+            <div class="short">
+                <div>
+                    <h2>Shortly about me</h2>
+                </div>
+                <div class="pic">
+                    <div><img src="images/image_5.png"></div>
+                </div>
+                <div class="content">
+                    <div>
+                        <p>sed ut perspicitis unde omnis natus error volupatem accusantuim dologue laudantum, totam rem.
+                        </p>
+                    </div>
+                    <div>
+                        <p style="color:gray;">
+                            aperiam eaque ipsa quae ab illo veritalis et beatae vitae dicta sunt explicablo nemo enim
+                            ipsam volupatem qula voluptas sit aspernatur aut odit aut fugit, sed
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <ul>
+                            <li>Campaign</li>
+                            <li>Portraits</li>
+                            <li>Fashion</li>
+                            <li>Fineart</li>
+                        </ul>
+                        <ul>
+                            <li>Advertisment</li>
+                            <li>Lifestyle</li>
+                            <li>Love story</li>
+                            <li>Landscapes</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest">
+                <div>
+                    <h2>Latest photoshoots</h2>
+                </div>
+                <div class="picrow">
+                    <div><img src="images/kataklimt-last-r1-c1.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-last-r1-c2.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-r1-c3.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-r1-c4.jpg" alt=""></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="picrow">
+                    <div><img src="images/kataklimt-r2-c1.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-r2-c2.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-r2-c3.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-r2-c4.jpg" alt=""></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="picrow">
+                    <div><img src="images/kataklimt-r3-c1.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-r3-c2.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-r3-c3.jpg" alt=""></div>
+                    <div><img src="images/kataklimt-r3-c4.jpg" alt=""></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </article>
+    <footer>
+        <div class="main">
+            <div class="end1">copyright</div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook "></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
